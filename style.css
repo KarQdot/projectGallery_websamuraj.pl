@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.gallery {
+    min-height: 100vh;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 95%;
+    left: 5%;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+}
+
+h1 {
+    font-size: 60px;
+    background-color: #000;
+    color: yellow;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    left: 35%;
+    right: 5%;
+    background-color: #333;
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+a {
+    flex-basis: calc(50% - 40px);
+    margin: 0 20px;
+    position: relative;
+    overflow: hidden;
+    height: 20%;
+}
